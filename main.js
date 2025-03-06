@@ -5,6 +5,7 @@ const email = document.getElementById("email")
 const container = document.getElementById("container")
 const card = document.querySelector(".success")
 const submitBtn = document.getElementById("submitBtn")
+const dissmisBtn = document.getElementById("dissmisBtn")
 
 if(window.innerWidth <= 800) {
     main.insertBefore(img, form)
@@ -26,6 +27,12 @@ const verificarEmail = () => {
 submitBtn.addEventListener("click", (e) => {
     e.preventDefault()
     verificarEmail()
-    console.log("funciona")
 })
 
+
+dissmisBtn.addEventListener("click", () => {
+    main.style.display = "flex" 
+        card.style.display = "none" 
+        email.classList.toggle("error")
+        container.classList.toggle("container")
+})
