@@ -1,0 +1,131 @@
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+    font-size: 16px;
+}
+
+body {
+    background-color: hsl(235, 18%, 26%);
+}
+
+/* ----------Formulario----------- */
+
+main {
+    display: flex;
+    background-color: white;
+    height: 540px;
+    width: 800px;
+    margin: 220px auto;
+    border-radius: 24px;
+    padding: 20px;
+}
+
+form {
+    padding: 40px;
+}
+
+h1 {
+    color: hsl(234, 29%, 20%);
+    font-size: 3em;
+}
+
+form p {
+    margin:  20px 0;
+}
+
+ul {
+    margin: 20px 0;
+    list-style: none; /* Oculta los puntos predeterminados */
+    padding-left: 0;
+  }
+  
+  li {
+    margin: 15px 0;
+    position: relative;
+    padding-left: 25px; /* Espacio para la imagen */
+  }
+  
+  li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px; /* Ajusta el tamaño */
+    height: 16px;
+    background-image: url('./assets/images/icon-list.svg');
+    background-size: cover;
+  }
+
+label {
+    color: hsl(234, 29%, 20%);
+    font-size: .8em;
+    font-weight: 700;
+}
+
+input {
+    width: 100%;
+    outline: none;
+    padding: 15px 20px;
+    margin: 5px 0 20px 0;
+    border: 1px solid hsl(0, 0%,58%);
+    border-radius: 6px;
+}
+
+#submitBtn, button {
+    width: 100%;
+    color: white;
+    background-color: hsl(234, 29%, 20%);
+    text-align: center;
+    padding: 15px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+}
+
+#submitBtn:hover, button:hover, #submitBtn:active, button:active {
+    background: linear-gradient(135deg, #ff547d, #e66643);
+    filter: brightness(1.1);
+}
+
+/* -------Mensaje aprobado--------- */
+
+.success {
+    display: none;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    margin: 180px auto;
+    border-radius: 30px;
+    padding: 40px 70px;
+}
+
+.success h1 {
+    margin: 30px 0 20px 0;
+    font-size: 3.5em;
+}
+
+.success p {
+    margin: 20px 0 30px 0;
+}
+
+
+/*---------MediaQuery-------- */
+
+@media (max-width: 800px) {
+    main {
+        
+    }
+}
+
