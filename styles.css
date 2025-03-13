@@ -23,10 +23,11 @@ body {
 
 main {
     display: flex;
+    flex-flow: row-reverse;
     background-color: white;
     height: 540px;
     width: 800px;
-    margin: 220px auto;
+    margin: 180px auto;
     border-radius: 24px;
     padding: 20px;
 }
@@ -143,11 +144,12 @@ input {
 
 /*---------MediaQuery-------- */
 
+
 @media (max-width: 800px) {
     /* -------Suscription page-------- */
     main {
         width: 100%;
-        height: 100vh;
+        height: auto;
         margin: 0;
         flex-direction: column;
         border-radius: 0;
@@ -155,7 +157,7 @@ input {
     }
 
     form {
-        padding: 50px;
+        padding: 30px;
     }
 
     #img {
@@ -167,7 +169,7 @@ input {
     }
 
     li {
-        margin: 40px 0;
+        margin: 20px 0;
     }
 
     input{
@@ -184,7 +186,7 @@ input {
     }
 
     .success p {
-        margin: 40px 0 40vh 0;
+        margin: 40px 0 80px 0;
     }
 
     .container::before {
@@ -192,3 +194,8 @@ input {
     }
 }
 
+@media (max-width: 400px) {
+    .container::before {
+        left: 60%;
+    }
+}

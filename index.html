@@ -17,10 +17,13 @@
 
   <!-- Sign-up form start -->
   <main id="main">
+    <img id="img" alt="" src="./assets/images/illustration-sign-up-desktop.svg">  
     <form id="form">
-      <h1>Stay updated!</h1>
+      <div class="header">
+        <h1>Stay updated!</h1>
 
-      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      </div>
       <ul>
         <li>Product discovery and building what matters</li>
         <li>Measuring to ensure updates are a success</li>
@@ -36,7 +39,6 @@
       <button id="submitBtn" type="submit">Subscribe to monthly newsletter</button>
     </form>
 
-    <img id="img" alt="" src="./assets/images/illustration-sign-up-desktop.svg">
   </main>
 
   <!-- Sign-up form end -->
@@ -44,16 +46,17 @@
   <!-- Success message start -->
 
   <div class="success">
-    <img src="./assets/images/icon-success.svg" alt="">
-    <h1>Thanks for subscribing!</h1>
+    <div class="success-icon-and-text">
+      <img src="./assets/images/icon-success.svg" alt="">
+      <h1>Thanks for subscribing!</h1>
 
-    <p>A confirmation email has been sent to <strong>ash@loremcompany.com.</strong> Please open it and click the button inside to confirm your subscription.</p>
-
+      <p>A confirmation email has been sent to <strong>ash@loremcompany.com.</strong> Please open it and click the button inside to confirm your subscription.</p>
+    </div>
     <button id="dismissbtn" >Dismiss message</button>
   </div>
 
   <!-- Success message end -->
   
-  <script src="main.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
